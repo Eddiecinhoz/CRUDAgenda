@@ -8,8 +8,8 @@ MANUAL DE DESPLIEGUE
 
 Para del despliegue del servidor, en el directorio del proyecto y desde la terminal ejecutar los siguientes comandos:
 
->npm init
->npm run dev
+>npm init>
+>npm run dev>
 
 Ejecuta el servidor a partir de un script llamado dev, que se apoya en nodemon.
 
