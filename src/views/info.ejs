@@ -1,0 +1,44 @@
+<%-include('partials/_header') %>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-10">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Primer Apellido</th>
+                        <th>Segundo Apellido</th>
+                        <th>Telefóno</th>
+                        <th>Dirección</th>
+                        <th>Correo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if (data){%>                       
+                            <tr>
+                                <td><%= data.nombre %></td>
+                                <td><%= data.apellido1 %></td>
+                                <td><%= data.apellido2 %></td>
+                                <td><%= data.telefono %></td>   
+                                <td><%= data.direccion %></td>
+                                <td><%= data.correo %></td>                             
+                            </tr>
+
+                    <%}%>
+             
+                </tbody>            
+            </table>
+        </div>
+           
+                    <form action="/return" method="post">  
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Volver
+                        </button>
+                    </form>
+                
+            
+    </div>
+</div>
+
+<%-include('partials/_footer') %>
